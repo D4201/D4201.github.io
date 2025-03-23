@@ -20,12 +20,28 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Efek Mengetik */
-h1 {
+/* Kontainer Utama - Pusatkan Semua Elemen */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 90%; /* Hindari terlalu melebar di layar besar */
+}
+
+/* Efek Mengetik - Pastikan Tetap di Tengah */
+#typing-text {
     font-size: 26px;
-    color: white;
     font-weight: bold;
+    color: white;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* Agar teks tidak terlalu panjang */
+    white-space: normal; /* Pastikan teks tetap teratur */
+    word-wrap: break-word;
+    display: inline-block;
 }
 
 /* Tombol Tetap di Tempat */
@@ -50,25 +66,33 @@ h1 {
     transform: translateX(-50%) scale(1.05);
 }
 
-/* Kotak Kutipan dengan Shadow Hitam */
+/* Kotak Kutipan - Tetap di Tengah */
 .quote-box {
     margin-top: 20px;
-    background: rgba(0, 0, 0, 0.7); /* Background hitam transparan */
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     width: 80%;
     max-width: 400px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Efek shadow hitam */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Style untuk teks dalam quote */
+/* Style untuk teks dalam quote - Tetap di Tengah */
 #typing-quote {
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Shadow hitam lebih pekat */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    max-width: 90%;
+    white-space: normal; /* Pastikan teks tetap rapi */
+    word-wrap: break-word;
+    text-align: center;
+    display: inline-block;
 }
 
 /* Popup */
