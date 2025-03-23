@@ -11,7 +11,7 @@ function typeEffect() {
 }
 
 // Efek Mengetik untuk Kutipan LDR
-const quote = "Pacaran jarak jauh memang tak semudah air yang jatuh, tetapi pacaran jarak jauh mampu menumbuhkan rindu yang utuh. Aku sayang kamu: ❤️ FENI RETNO PALUPI ❤️";
+const quote = "Pacaran jarak jauh memang tak semudah air yang jatuh, tetapi pacaran jarak jauh mampu menumbuhkan rindu yang utuh. Aku sayang kamu:                 ❤️ FENI RETNO PALUPI ❤️";
 let quoteIndex = 0;
 
 function typeQuote() {
