@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 /* Container Utama */
@@ -16,6 +17,7 @@ body {
     max-width: 80%;
 }
 
+/* Efek Mengetik */
 h1 {
     font-size: 24px;
     color: white;
@@ -36,6 +38,17 @@ button {
 
 button:hover {
     background: #c72c3c;
+}
+
+/* Kotak Kutipan */
+.quote-box {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Popup */
