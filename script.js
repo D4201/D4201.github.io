@@ -41,6 +41,23 @@ window.onclick = function (event) {
     }
 };
 
+// Fixes audio auto play
+document.addEventListener("DOMContentLoaded", function () {
+    let audio = document.getElementById("background-music");
+
+    // Coba putar otomatis (beberapa browser mungkin memblokir)
+    audio.play().catch(() => {
+        console.log("Autoplay dicegah oleh browser. Menunggu interaksi pengguna.");
+    });
+
+    // Jika autoplay gagal, putar saat user pertama kali klik tombol
+    document.body.addEventListener("click", function () {
+        if (audio.paused) {
+            audio.play();
+        }
+    });
+});
+
 // Mulai efek mengetik saat halaman dimuat
 window.onload = function () {
     typeEffect();
