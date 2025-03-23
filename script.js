@@ -7,11 +7,13 @@ function typeEffect() {
         document.getElementById("typing-text").innerHTML += text.charAt(index);
         index++;
         setTimeout(typeEffect, 100);
+    } else {
+        document.getElementById("typing-text").classList.add("centered"); // Pastikan tetap di tengah
     }
 }
 
 // Efek Mengetik untuk Kutipan LDR
-const quote = "Pacaran jarak jauh memang tak semudah air yang jatuh, tetapi pacaran jarak jauh mampu menumbuhkan rindu yang utuh. Aku sayang kamu:                 ❤️ FENI RETNO PALUPI ❤️";
+const quote = "Pacaran jarak jauh memang tak semudah air yang jatuh, tetapi pacaran jarak jauh mampu menumbuhkan rindu yang utuh.";
 let quoteIndex = 0;
 
 function typeQuote() {
@@ -19,6 +21,8 @@ function typeQuote() {
         document.getElementById("typing-quote").innerHTML += quote.charAt(quoteIndex);
         quoteIndex++;
         setTimeout(typeQuote, 50);
+    } else {
+        document.getElementById("typing-quote").classList.add("centered"); // Pastikan tetap di tengah
     }
 }
 
