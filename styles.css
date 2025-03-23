@@ -1,16 +1,14 @@
-/* Background Animasi */
+/* Background Foto untuk Body */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+    background-image: url('Photos2.jpg'); /* Ganti dengan nama file foto */
+    background-size: cover; /* Menyesuaikan gambar dengan layar */
+    background-position: center; /* Memastikan posisi tengah */
+    background-repeat: no-repeat; /* Tidak mengulang gambar */
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #ff758c);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Animasi Background Bergerak */
